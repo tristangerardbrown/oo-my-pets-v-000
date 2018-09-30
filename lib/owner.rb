@@ -4,8 +4,7 @@ class Owner
 
   @@all = []
 
-  def initialize(pets)
-    @pets = Hash[:fishes=> [],:cats=> [], :dogs=> []]
+  def initialize(owner)
     @owner = owner
     @species = owner
     @@all << self
@@ -33,6 +32,10 @@ class Owner
 
   def name=(name)
     @name=name
+  end
+
+  def pets(pets)
+    pets = {:cats => [], :dogs => [], :fishes => []}
   end
 
   def self.buy_fish
