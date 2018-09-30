@@ -4,7 +4,8 @@ class Owner
 
   @@all = []
 
-  def initialize(owner)
+  def initialize(pets)
+    @pets = Hash[:fishes=> [],:cats=> [], :dogs=> []]
     @owner = owner
     @species = owner
     @@all << self
