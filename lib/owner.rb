@@ -52,6 +52,7 @@ class Owner
   end
 
   def walk_dog
+    pets[:dogs][:mood] == "happy"
   end
 
   def play_with_cats
