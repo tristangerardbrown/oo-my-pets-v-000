@@ -7,7 +7,6 @@ class Owner
   def initialize(owner)
     @owner = owner
     @species = owner
-    @pets = {fishes: [], cats: [], dogs: []}
     @@all << self
   end
 
@@ -37,7 +36,7 @@ class Owner
 
 
   def pets
-    self.pets = @pets 
+    @pets = {fishes: [], cats: [], dogs: []}
   end
 
   def self.buy_fish
