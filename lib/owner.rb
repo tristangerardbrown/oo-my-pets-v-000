@@ -35,6 +35,11 @@ class Owner
     @name=name
   end
 
+
+  def pets
+    self.pets = @pets 
+  end
+
   def self.buy_fish
   end
 
